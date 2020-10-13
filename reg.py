@@ -14,11 +14,11 @@ def window_exit():
         window.destroy()
 
 
-l_user = Label(window, text='Login:').grid(row=0, column=0, padx=10, pady=10, sticky=W)
-e_user = Entry(window).grid(row=0, column=1, columnspan=2, padx=10, sticky=W+E)
+l_user = ttk.Label(window, text='Login:').grid(row=0, column=0, padx=10, pady=10, sticky=W)
+e_user = ttk.Entry(window).grid(row=0, column=1, columnspan=2, padx=10, sticky=W+E)
 
-l_pass = Label(window, text='Password:').grid(row=1, column=0, padx=10, pady=10)
-e_pass = Entry(window).grid(row=1, column=1, columnspan=2, padx=10, sticky=W+E)
+l_pass = ttk.Label(window, text='Password:').grid(row=1, column=0, padx=10, pady=10)
+e_pass = ttk.Entry(window).grid(row=1, column=1, columnspan=2, padx=10, sticky=W+E)
 
 btn_login = ttk.Button(window, text='Вход').grid(row=2, column=0, pady=10)
 btn_reg = ttk.Button(window, text='Регистация').grid(row=2, column=1)
